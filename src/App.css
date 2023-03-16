@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+nav{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navLink{
+  margin: 10px;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.place-card{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #CBE4DE;
+  width: 40%;
+  padding:20px;
+  margin: 10px;
+  border-radius: 25px;
 }
-
-.App-link {
-  color: #61dafb;
+.review-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #CBE4DE;
+  width: 70%;
+  padding:20px;
+  margin: 10px;
+  border-radius: 25px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+  background: none;
+  color:#2E4F4F;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.review_btn{
+  font-family: 'Nunito', sans-serif;
+  background-color: #2E4F4F;
+  color: #CBE4DE;
+  padding:15px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+p{
+  font-family: 'Nunito', sans-serif;
+  color: #0E8388;
+}
+h2{
+  font-family: 'Nunito', sans-serif;
+}
+.filterButton{
+ background-color: transparent;
+  color: #0E8388;
+  padding: 10px;
+  margin-left: 30px;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight:700;
+  font-size: large;
+  cursor: pointer;
+}
+a{
+  color: #0E8388;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
 }
