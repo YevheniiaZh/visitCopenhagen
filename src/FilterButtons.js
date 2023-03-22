@@ -18,7 +18,7 @@ function FilterButtons({data, setPlace}){
         <div>
             <button className="filterButton" onClick={() =>filteredPlaces("se&do")}>Se&Do</button>
             <button  className="filterButton" onClick={() =>filteredPlaces("eat&drink")}>Eat&Drink</button>
-            <button  className="filterButton" onClick={() =>filteredPlaces("popular")}>Most popular</button>
+            <button  className="filterButton" onClick={() =>filteredPlaces("popular")}>Cool&popular</button>
         </div>
         
     )
