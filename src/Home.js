@@ -7,10 +7,11 @@ function Home(){
     const [place, setPlace] = useState(placesData);
     const [showText, setShowText] = useState(false);
 
-    const chosenPlaces = (searchTerm) =>{
-        const newPlaces = placesData.filter(element =>element.searchTerm === searchTerm);
-        setPlace(newPlaces);
-    }
+    // Function for filtering per one searchTerm per place
+    //const chosenPlaces = (searchTerm) =>{
+     //   const newPlaces = placesData.filter(element =>element.searchTerm === searchTerm);
+     //   setPlace(newPlaces);
+    //}
 
    
 
@@ -22,7 +23,13 @@ function Home(){
     return(
         <div>
             <div className="container">
-                <FilterButtons filteredPlaces = {chosenPlaces}/>
+                {/* Giving props to FilterButton component if there were filtering only per one searchterm per item  */}
+            {/*  <FilterButtons filteredPlaces = {chosenPlaces} /> */}
+
+            {/* Searching per multiple SearchTerms per item*/}
+            <FilterButtons 
+            data ={placesData}
+            setPlace={setPlace}/>
             </div>
         <div className="container">
             {
